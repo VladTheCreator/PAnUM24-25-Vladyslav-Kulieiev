@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tytuł fragmentu -->
+    <TextView
+        android:id="@+id/textViewSnackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wybierz przekąskę"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <!-- Lista przekąsek (możesz użyć RecyclerView lub prostego LinearLayout z przyciskami) -->
+    <Button
+        android:id="@+id/buttonSnack1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chipsy - 5 zł"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/buttonSnack2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ciastko - 3 zł"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/buttonSnack3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Orzechy - 6 zł"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Tutaj możesz dodać TextView, w którym pokażesz szczegóły wybranej przekąski -->
+    <TextView
+        android:id="@+id/textViewSnackDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingTop="16dp"/>
+</LinearLayout>

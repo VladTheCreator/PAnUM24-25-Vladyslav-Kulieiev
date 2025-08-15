@@ -1,0 +1,32 @@
+<resources>
+    <!-- App name -->
+    <string name="app_name">Snack &amp; Drink App</string>
+
+    <!-- Fragment titles -->
+    <string name="snack_fragment_title">Wybierz przekąskę</string>
+    <string name="drink_fragment_title">Wybierz napój</string>
+    <string name="location_fragment_title">Lokalizacja</string>
+
+    <!-- Snack names and descriptions -->
+    <string name="snack_chips">Chipsy – chrupiące, słone</string>
+    <string name="snack_cookie">Ciastko czekoladowe – słodkie, świeże</string>
+    <string name="snack_nuts">Orzechy mieszane – zdrowa przekąska</string>
+
+    <!-- Snack prices -->
+    <string name="price_chips">5 zł</string>
+    <string name="price_cookie">3 zł</string>
+    <string name="price_nuts">6 zł</string>
+
+    <!-- Drink names and descriptions -->
+    <string name="drink_cola">Cola – gazowany napój słodki</string>
+    <string name="drink_juice">Sok pomarańczowy – świeży, naturalny</string>
+
+    <!-- Drink prices -->
+    <string name="price_cola">4 zł</string>
+    <string name="price_juice">6 zł</string>
+
+    <!-- Location info -->
+    <string name="location_name">Cafe Central</string>
+    <string name="location_address">ul. Przykładowa 10, 00-001 Miasto</string>
+    <string name="location_hours">Pon-Pt: 8:00-20:00, Sob-Nd: 10:00-18:00</string>
+</resources>
