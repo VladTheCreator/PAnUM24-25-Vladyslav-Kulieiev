@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/stopwatchFragment"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Stopery" />
+    <item
+        android:id="@+id/timerFragment"
+        android:icon="@android:drawable/ic_lock_idle_alarm"
+        android:title="Minutniki" />
+</menu>

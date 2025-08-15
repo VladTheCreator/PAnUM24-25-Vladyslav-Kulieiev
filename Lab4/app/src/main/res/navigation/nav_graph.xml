@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/stopwatchFragment">
+
+    <fragment
+        android:id="@+id/stopwatchFragment"
+        android:name="com.example.timersapp.StopwatchFragment"
+        android:label="Stopery" />
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.example.timersapp.TimerFragment"
+        android:label="Minutniki" />
+</navigation>
