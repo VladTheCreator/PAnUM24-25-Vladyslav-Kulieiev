@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Nagłówek + aktualny gracz -->
+    <TextView
+        android:id="@+id/tvTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tura: X"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Wyniki -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvScoreX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X: 0.0"
+            android:textSize="18sp"
+            android:layout_marginEnd="24dp" />
+
+        <TextView
+            android:id="@+id/tvScoreO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O: 0.0"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Plansza 3x3 -->
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginBottom="16dp">
+
+        <!-- Rząd 0 -->
+        <Button android:id="@+id/b00" style="@style/TicBtn"/>
+        <Button android:id="@+id/b01" style="@style/TicBtn"/>
+        <Button android:id="@+id/b02" style="@style/TicBtn"/>
+
+        <!-- Rząd 1 -->
+        <Button android:id="@+id/b10" style="@style/TicBtn"/>
+        <Button android:id="@+id/b11" style="@style/TicBtn"/>
+        <Button android:id="@+id/b12" style="@style/TicBtn"/>
+
+        <!-- Rząd 2 -->
+        <Button android:id="@+id/b20" style="@style/TicBtn"/>
+        <Button android:id="@+id/b21" style="@style/TicBtn"/>
+        <Button android:id="@+id/b22" style="@style/TicBtn"/>
+
+    </GridLayout>
+
+    <!-- Kontrolki -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnNewGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nowa gra" />
+
+        <Button
+            android:id="@+id/btnResetScores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset punktów"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+</LinearLayout>
