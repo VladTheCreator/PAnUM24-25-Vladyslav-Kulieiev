@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biegowe statystyki"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Obliczenia z tempa -->
+        <EditText
+            android:id="@+id/etPace"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Tempo (min/km)"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/etDistance"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Dystans (km)"
+            android:inputType="numberDecimal"/>
+        <Button
+            android:id="@+id/btnFromPace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oblicz z tempa"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Obliczenia z prędkości -->
+        <EditText
+            android:id="@+id/etSpeed"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Prędkość (km/h)"
+            android:inputType="numberDecimal"/>
+        <Button
+            android:id="@+id/btnFromSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oblicz z prędkości"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Obliczenia z dystansu i czasu -->
+        <EditText
+            android:id="@+id/etTargetDistance"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Dystans docelowy (km)"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/etTargetTime"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Czas docelowy (minuty)"
+            android:inputType="numberDecimal"/>
+        <Button
+            android:id="@+id/btnFromTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oblicz tempo i prędkość"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wynik"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
