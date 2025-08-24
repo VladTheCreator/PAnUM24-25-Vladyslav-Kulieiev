@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string-array name="numeral_systems">
+        <item>arabic</item>
+        <item>roman</item>
+    </string-array>
+</resources>
